@@ -39,10 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portal'
-<<<<<<< HEAD
-=======
-    
->>>>>>> ee8dcbda9512e403292b27ee12bdd2981ebe29c7
 ]
 
 MIDDLEWARE = [

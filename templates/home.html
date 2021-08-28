@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://pngimage.net/wp-content/uploads/2018/05/books-png-icon-6-300x200.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
       <div class="bg-modal">
         <div class="modal-content">
           <div class="close">+</div>
-          <h2>Welcome</h2>
+          <h2>Welcome <span id="person"></span></h2>
           <img id="login-logo" src="/static/images/digital_academy_logo_small.png">
  
           <form action="">
@@ -50,8 +51,8 @@
       </div>
       <!-- close modal -->
         <div class="button"> 
-          <button class="button-style" name="teacher-button" value="teacher-button"><img class="choice-button" id="teacher-button" src="/static/images/teacher-img.png"></button>
-          <button class="button-style" name="student-button" value="student-button"><img class="choice-button" id="student-button" src="/static/images/student-img.png"></button>
+          <button class="button-style" onclick="displayTeacher()" name="teacher-button" value="teacher-button"><img class="choice-button" id="teacher-button" src="/static/images/teacher-img.png"></button>
+          <button class="button-style" onclick="displayStudent()" name="student-button" value="student-button"><img class="choice-button" id="student-button" src="/static/images/student-img.png"></button>
         </div>
       </section>
       

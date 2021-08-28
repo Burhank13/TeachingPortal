@@ -1,3 +1,4 @@
+let profession = document.querySelector("#person");
 document.getElementById('teacher-button').addEventListener('click',
 function()
 {
@@ -18,3 +19,11 @@ function(){
 function goback(){
     window.history.back();
 };
+
+function displayTeacher() {
+    profession.innerHTML = 'teacher'
+}
+
+function displayStudent() {
+    profession.innerHTML = 'student'
+}
