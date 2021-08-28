@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/signup.css">
+    <title>Digital Academy</title>
+  </head>
+  <body >
+    <!-- main section -->
+    <main>
+      <section>
+        <div class="bg-modal">
+          <div class="modal-content">
+            <div class="back" onclick="goback()">&lt</div>
+            <h2>Welcome</h2>
+            <img id="login-logo" src="/static/images/digital_academy_logo_small.png">
+            <form action="">
+              <input type="text" placeholder="Name" name="name" required>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="password" placeholder="Password" name="password" required>
+              <input type="password" placeholder="Confirm password" name="co-password" required>
+              <input type="text" placeholder="College name" name="college-name" required>
+              <button id="submit-button" type="submit">Sign up</button>          
+              <!-- <p id="signup-director">Not a member? <a href="#">Signup</a></p> -->
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+      </section>
+    <script src="/static/authenticate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/home.css">
+    <title>Digital Academy</title>
+  </head>
+  <body >
+    <!-- Navigation Header -->
+    <header>
+      <nav>
+        <!-- logo -->
+        <img src="/static/images/digital_academy_logo.png" alt="Logo" id="logo">
+        <!-- title -->
+        <ul class="navlinks">
+          <li><a class="links" href="#home">Home</a></li>
+          <li><a class="links" href="#about">About</a></li>
+          <li><a class="links" href="#contact">Contact</a></li>
+          <li><a class="links" href="/signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main>
+      <section id="home">
+        <h1 id="welcome-qoute">Welcome to digital academy.</h1>
+        <h2 id="welcome-description">teach, learn, share.</h2>
+      </div>
+      <!-- form modal -->
+      <div class="bg-modal">
+        <div class="modal-content">
+          <div class="close">+</div>
+          <h2>Welcome</h2>
+          <img id="login-logo" src="/static/images/digital_academy_logo_small.png">
+ 
+          <form action="">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="password" name="password" required>
+            <button id="submit-button" type="submit">Login</button>          
+            <p id="signup-director">Not a member? <a href="/signup">Signup</a></p>
+          </form>
+        </div>
+      </div>
+      <!-- close modal -->
+        <div class="button"> 
+          <button class="button-style" name="teacher-button" value="teacher-button"><img class="choice-button" id="teacher-button" src="/static/images/teacher-img.png"></button>
+          <button class="button-style" name="student-button" value="student-button"><img class="choice-button" id="student-button" src="/static/images/student-img.png"></button>
+        </div>
+      </section>
+      
+      <!-- about section -->
+      <section id="about">
+        <br><br><br><br>
+        <h1>New to digital academy?</h1>
+        <a id="signup-button" href="/signup">Sign up</a>
+        <div id="about-section">
+          <h1 class="about-title">Learn to use digital academy.</h1>
+          <div class="about-desc">
+            <div class="about-container">
+              <img src="images/tick-symbol.png" height="30px" width="30px">
+              <h2 class="about-title">Calender</h2>
+              <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur possimus necessitatibus. In suscipit officiis dolores, doloremque magni praesentium consectetur excepturi, ea, architecto perferendis nam quidem dolor soluta quia sit!</p>
+            </div>
+            <div class="about-container">
+              <img src="images/tick-symbol.png" height="30px" width="30px">
+              <h2 class="about-title">Online lectures</h2>
+              <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur possimus necessitatibus. In suscipit officiis dolores, doloremque magni praesentium consectetur excepturi, ea, architecto perferendis nam quidem dolor soluta quia sit!</p>
+            </div>
+            <div class="about-container">
+              <img src="images/tick-symbol.png" height="30px" width="30px">
+              <h2 class="about-title">Assignments</h2>
+              <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur possimus necessitatibus. In suscipit officiis dolores, doloremque magni praesentium consectetur excepturi, ea, architecto perferendis nam quidem dolor soluta quia sit!</p>
+            </div>
+            <div class="about-container">
+              <img src="images/tick-symbol.png" height="30px" width="30px">
+              <h2 class="about-title">Examination</h2>
+              <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur possimus necessitatibus. In suscipit officiis dolores, doloremque magni praesentium consectetur excepturi, ea, architecto perferendis nam quidem dolor soluta quia sit!</p>
+            </div>
+          </div>
+        </div>
+      </section>    
+    
+    <!-- footer -->
+    <footer id="contact">
+      <h2 class="social-media">Follow us
+        <a href="#"><img class="social-icons" src="/static/images/instagram-icon.png"></a>
+        <a href="#"><img class="social-icons" src="/static/images/twitter-icon.png"></a>
+        <a href="#"><img class="social-icons" src="/static/images/linkedin-icon.png"></a>
+      </h2>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/static/authenticate.js"></script>
+
+  </body>
+</html>
