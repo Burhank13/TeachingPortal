@@ -21,13 +21,13 @@
             <div class="back" onclick="goback()">&lt</div>
             <h2>Welcome {{profession}}</h2>
             <img id="signup-logo" src="/static/images/digital_academy_logo_small.png">
-            <form action="">
+            <form method='post' action='/register'> {% csrf_token %}
               <input type="text" placeholder="Name" name="name" required>
               <input type="email" placeholder="Email" name="email" required>
               <input type="password" placeholder="Password" name="password" required>
               <input type="password" placeholder="Confirm password" name="co-password" required>
+              <input type="hidden" name="profession" value="{{profession}}" >
               <button id="submit-button" type="submit">Sign up</button>          
-              <!-- <p id="signup-director">Not a member? <a href="#">Signup</a></p> -->
             </form>
           </div>
         </div>

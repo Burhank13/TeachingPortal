@@ -20,7 +20,7 @@
           <div class="choice-content">
             <div class="back" onclick="goback()">&lt</div>
             <img id="choice-logo" src="/static/images/digital_academy_logo_small.png">
-            <form method="POST" action="/choseProfession"> {% csrf_token %}
+            <form method="POST" action="/signup"> {% csrf_token %}
               <button class="choice-button" name="profession" value="teacher" type="submit">Teacher</button>          
               <button class="choice-button" name="profession" value="student" type="submit">Student</button>          
             </form>
