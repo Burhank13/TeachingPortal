@@ -1,29 +1,27 @@
-let profession = document.querySelector("#person");
+
 document.getElementById('teacher-button').addEventListener('click',
 function()
 {
-    document.querySelector('.bg-modal').style.display = 'flex';
+    document.querySelector('.teacher-modal').style.display = 'flex';
 });
 
 document.getElementById('student-button').addEventListener('click',
 function()
 {
-    document.querySelector('.bg-modal').style.display = 'flex';
+    document.querySelector('.student-modal').style.display = 'flex';
 });
 
-document.querySelector('.close').addEventListener('click',
+document.querySelector('.student-close').addEventListener('click',
 function(){
-    document.querySelector('.bg-modal').style.display = 'none';
+    document.querySelector('.student-modal').style.display = 'none';
+});
+
+document.querySelector('.teacher-close').addEventListener('click',
+function(){
+    document.querySelector('.teacher-modal').style.display = 'none';
 });
 
 function goback(){
     window.history.back();
 };
 
-function displayTeacher() {
-    profession.innerHTML = 'teacher'
-}
-
-function displayStudent() {
-    profession.innerHTML = 'student'
-}
