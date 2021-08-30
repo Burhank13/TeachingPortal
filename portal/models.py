@@ -1,7 +1,21 @@
 from django.db import models
 from datetime import datetime
+from django import forms
 
 # Create your models here.
+class Person(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField(max_length=255)
+    password = models.CharField(max_length=100)
+    profession = models.CharField(max_length=15)
+
+    class Meta:
+        verbose_name_plural = "people"
+    
+    def __str__(self):
+        return self.name + " (" + self.profession + ")"
+
+
 class Test(models.Model):
     test_name = models.CharField(max_length=100)
     description = models.CharField(max_length=255, blank=True)

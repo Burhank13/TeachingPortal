@@ -2,6 +2,8 @@ from django.http.response import HttpResponseRedirect
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template.response import TemplateResponse
+from .models import Person
+from .forms import RegisterForm
 
 # Create your views here.
 
@@ -24,10 +26,14 @@ def login(request):
     return redirect('/')    
     
 def register(request):
-    if request.method =='POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        co_password = request.POST.get('co-password')
-        profession = request.POST.get('profession')
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            person = form.save(commit=False)
+            person.save()
+        else: 
+            form = RegisterForm()
     return redirect('/')
+
+def teams(request):
+    return render(request, 'home.html')
