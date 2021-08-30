@@ -37,7 +37,7 @@
       <!-- form modal -->
       <div class="student-modal bg-modal">
         <div class="modal-content">
-          <form method='post' action=''> {% csrf_token %}
+          <form method='post' action='/login'> {% csrf_token %}
           <div class="student-close">+</div>
           <h2>Welcome student<span id="person"></span></h2>
           <img id="login-logo" src="/static/images/digital_academy_logo_small.png">
@@ -47,19 +47,19 @@
             <button id="submit-button" type="submit">Login</button>          
             <p id="signup-director">Not a member? <a href="/choice">Signup</a></p>
           </form>
+          </div>
         </div>
-      </div>
 
       <div class="teacher-modal bg-modal">
         <div class="modal-content">
-          <form method='post' action='/login'> {% csrf_token %}
+          <form method='post' action="/login"></form> {% csrf_token %}
           <div class="teacher-close">+</div>
           <h2>Welcome teacher<span id="person"></span></h2>
           <img id="login-logo" src="/static/images/digital_academy_logo_small.png">
             <input type="email" placeholder="Email" name="email" required>
             <input type="password" placeholder="password" name="password" required>
             <input type="hidden" name="profession" value="teacher">
-            <button id="submit-button" type="submit">Login</button>          
+            <button id="submit-button" type="submit">Login</button>
             <p id="signup-director">Not a member? <a href="/choice">Signup</a></p>
           </form>
         </div>
@@ -69,6 +69,10 @@
           <button class="button-style" onclick="displayTeacher()" name="teacher-button" value="teacher-button"><img class="choice-button" id="teacher-button" src="/static/images/teacher-img.png"></button>
           <button class="button-style" onclick="displayStudent()" name="student-button" value="student-button"><img class="choice-button" id="student-button" src="/static/images/student-img.png"></button>
         </div>
+        <div>
+          {% for message in messages %}
+          <h3>{{message}}</h3>
+          {% endfor %}
       </section>
       
       <!-- about section -->
