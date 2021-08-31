@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/teams.css">
+    <title>Digital Academy</title>
+  </head>
+  <body >
+    <!-- Navigation Header -->
+    <header>
+      <div class="nav">
+        <!-- logo -->
+        <img src="/static/images/digital_academy_logo_white_sm.png" alt="Logo" id="logo">
+        <!-- title -->
+        <ul class="navlinks">
+            <div>
+              <span class="links"><img id="profile-icon" class="dropdown_button" onclick="profileDropdown()" src="/static/images/profile_icon.png"></span>
+                <div id="profile-dropdown-menu" class="dropdown-menu-right dropdown-content">
+                    <a href="#"><img id="profile-icon-lg" src="/static/images/profile_icon_black_lg.png"></a>
+                    <a href="#">Name</a>
+                    <form method='POST' action='#'> {% csrf_token %}
+                        <p>Logout</p>
+                    </form>
+              </div>
+            </div>
+        </ul>
+      </div>
+    </header>
+    <br clear="both">
+    <!-- main section -->
+    <main>
+        <div id="side-section">
+          <ul id="side-nav">
+            <li class="side-links">
+                <a href="#"><img class="sidenav-icons" src="/static/images/calendar_icon_green_sm.png"></a>
+                <p class="side-topic">Calendar</p>
+            </li>
+            <li class="side-links active">
+              <a href="#"><img class="sidenav-icons" src="/static/images/team_icon_green_sm.png"></a>
+              <p class="side-topic">Teams</p>
+              
+            </li>
+            <li class="side-links">
+              <a href="#"><img class="sidenav-icons" src="/static/images/assignment_icon_green_sm.png"></a>
+              <p class="side-topic">Assignment</p>
+            </li>
+            <li class="side-links">
+              <a href="#"><img class="sidenav-icons" src="/static/images/exam_icon_green_sm.png"></a>
+              <p class="side-topic">Examination</p>
+            </li>
+          </ul>
+        </div>
+        <div id="main-content">
+          <div class="sub-header-position">
+            <div id="sub-header">              
+              <a href="#" id="join-button" name="join-button" class="sub-header-btn">Join</a>
+              <a href="#" id="create-button" name="create-button" class="sub-header-btn">Create</a>
+            </div>       
+          </div>
+          <div class="join-bg-modal">
+            <div class="modal-content">
+              <div class="close join-close">+</div>
+              <form action="">
+                <label for="subjectid" id="subjectlabel">Enter subject ID:</label>
+                <input type="text" placeholder="id" id="subjectid" name="subjectid">
+                <button class="submit-button" type="submit">Join</button>          
+              </form>             
+            </div>
+          </div>
+          <div class="create-bg-modal">
+            <div class="modal-content">
+              <div class="close create-close">+</div>
+              <form action="">
+                <label for="subjectname" id="subjectlabel">Enter subject name:</label>
+                <input type="text" placeholder="name" id="subjectname" name="subjectname">
+                <button class="submit-button" type="submit">Create</button>          
+              </form>             
+            </div>
+          </div>
+
+          <div class="container">
+                <div class="card-view">
+                    <div class="dropdown">
+                        <p class="card-settings" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">...</p>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add member</a></li>
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                        <br clear="both"> 
+                        <a href="#"><img class="card-image" src="/static/images/team_icon_green_sm.png"></a>           
+                        <h5>Team Name</h5>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="/static/teams.js"></script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Philosopher';
+    color: #212319;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+body {
+    position: relative;
+}
+
+.nav {
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    background-color: #548251;
+    display: flex;
+    padding: 0px 0px 0px 70px;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    width: 6%;
+    margin-left: auto;
+    padding-left: 0px;
+    margin-right: 100px;
+}
+
+.navlinks li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    text-decoration: none;
+    color: #e2e3dd;
+    font-size: 0.80em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    line-height: 1.2em;
+}
+
+#logo {
+    height: 48px;
+    width: 210px;    
+    padding: 10px;
+}
+
+#settings{
+    color: #e2e3dd;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding: 0px 0px 12px 0px;
+    cursor: pointer;
+}
+
+#settings:hover{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#profile-icon{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+#profile-icon:hover{
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-content {
+    margin: 8px 20px 0px 0px;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+
+}
+
+.dropdown-content a {
+    color: #212319;
+    padding: 12px 50px;
+    text-decoration: none;
+}
+  
+.dropdown-content a:hover {background-color: #e2e3dd}
+
+.show {display:flex;
+flex-direction: column;
+}
+
+#profile-icon-lg{
+    height: 60px;
+    width: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#side-section{
+    background-color: #fdd364;
+}
+#side-nav {
+    display: flex;
+    flex-direction: column;
+    background: #fdd364;
+    width: 5%;
+    height: 92vh;
+    list-style-type: none;
+    margin: 20 0px;
+    padding: 10px 0px;
+    margin-top: 24px;
+    position: fixed;
+}
+
+.side-links{
+    margin: 20px 0px;
+    padding: 0px 0px 0px 8px;
+}
+
+.sidenav-icons{
+    padding: 4px;
+    height: 35px;
+    width: 35px;
+}
+
+.side-links:hover{
+    border-right: 3px solid #548251;
+}
+
+.active{
+    border-right: 3px solid #548251;
+}
+
+.side-topic{
+    font-size: 10px;
+    color: #548251;
+    cursor: pointer;
+}
+
+.side-topic:hover{
+    text-decoration: underline;
+}
+
+#main-content{
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+}
+
+#sub-header{
+    padding: 10px;
+    float: right;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 40px;
+
+}
+
+.sub-header-position{
+    width: 100%;
+    background: #e2e3dd;
+    height:40px;
+}
+
+.sub-header-btn{
+    padding: 4px 15px;
+    margin: 0px 5px;
+    font-size: 0.8em;
+    background: #e2e3dd;
+    color: #212319;
+    text-decoration: none;
+    border: 1px solid #212319;
+}
+
+.container{
+    margin: 20px 20px 0px 85px;
+}
+
+.card-view{
+    width: 21%;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    border: 0.2px solid rgba(0,0,0,0.1);
+    float: left;
+    margin: 20px;
+}
+
+.student-card-view{
+    width: 21%;
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    border: 0.2px solid rgba(0,0,0,0.1);
+    float: left;
+    margin: 20px;
+}
+
+.card-image{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.card-settings{
+    display: flex;
+    margin-left: auto;
+    float: right;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.join-bg-modal, .create-bg-modal, .bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33,35,25,0.8);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5em;
+    display: none;
+}
+
+#subjectlabel{
+    padding: 40px 20px 20px 20px;
+    left: 0;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 1.3em;
+}
+
+#subjectid, #subjectname{
+    padding: 10px;
+    line-height: 1.4em;
+    border: none;
+}
+
+#subjectid:hover, #subjectname:hover{
+    border-bottom: 2px solid #548251;
+}
+
+ .modal-content {
+     padding: 25px;
+     width: 300px;
+     height: 250px;
+     background-color: #e2e3dd;
+     text-align: center;
+     position: relative;
+     border: none;
+     border-radius: 0;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .close{
+     position: absolute;
+     top: 0;
+     right: 14px;
+     font-size: 42px;
+     transform: rotate(45deg);
+     cursor: pointer;
+ }
+
+ .submit-button{
+    margin-top: 20px;
+    padding: 4px 20px;
+    background-color: #548251;
+    border: none;
+    color: #fff;
+    width: 35%;
+    line-height: 1.4em;
+}

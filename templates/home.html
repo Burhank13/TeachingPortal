@@ -52,7 +52,7 @@
 
       <div class="teacher-modal bg-modal">
         <div class="modal-content">
-          <form method='post' action="/login"></form> {% csrf_token %}
+          <form method='post' action='/login'> {% csrf_token %}
           <div class="teacher-close">+</div>
           <h2>Welcome teacher<span id="person"></span></h2>
           <img id="login-logo" src="/static/images/digital_academy_logo_small.png">
@@ -66,8 +66,8 @@
       </div>
       <!-- close modal -->
         <div class="button"> 
-          <button class="button-style" onclick="displayTeacher()" name="teacher-button" value="teacher-button"><img class="choice-button" id="teacher-button" src="/static/images/teacher-img.png"></button>
-          <button class="button-style" onclick="displayStudent()" name="student-button" value="student-button"><img class="choice-button" id="student-button" src="/static/images/student-img.png"></button>
+          <button class="button-style" name="teacher-button" value="teacher-button"><img class="choice-button" id="teacher-button" src="/static/images/teacher-img.png"></button>
+          <button class="button-style" name="student-button" value="student-button"><img class="choice-button" id="student-button" src="/static/images/student-img.png"></button>
         </div>
         <div>
           {% for message in messages %}

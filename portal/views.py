@@ -31,7 +31,7 @@ def login(request):
             if user.password==password and user.profession==profession:
                 print("strign")
                 messages.info(request,'Logged in')
-                return redirect('/') 
+                return redirect('/teams') 
             else:
                 print("strignsss")
                 messages.info(request,'invalid credentials')
@@ -53,4 +53,5 @@ def register(request):
     return redirect('/')
 
 def teams(request):
-    return render(request, 'home.html')
+    return render(request, 'teacherTeams.html')
+
